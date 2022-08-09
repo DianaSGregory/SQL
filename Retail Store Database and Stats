@@ -1,0 +1,48 @@
+Create a retail store database
+
+/**Clothing:
+Long Sleeve shirts (20)
+T-shirts (20)
+Collar shirts (20)
+Shorts (20)
+Pants (30)
+Hats (10)
+Dresses (20)
+Socks (20)
+Onesie (10)
+Sleep Sack (10)
+Tights (10) 
+Sweatshirt (20)
+Sweatpants (20)
+Leggings (10)
+Jacket (20)
+**/
+
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, sold INTEGER);
+
+INSERT INTO CLOTHING VALUES ( 1, "Long Sleeve shirts", 20, 35, 12);
+INSERT INTO CLOTHING VALUES (2, "T-shirts", 20, 12, 8);
+INSERT INTO CLOTHING VALUES (3, "Collar shirts", 20, 30, 17);
+INSERT INTO CLOTHING VALUES (4, "Shorts", 20, 15, 11);
+INSERT INTO CLOTHING VALUES (5, "Pants", 30, 25, 19);
+INSERT INTO CLOTHING VALUES (6, "Hats", 10, 12, 6);
+INSERT INTO CLOTHING VALUES (7, "Dresses", 20, 35, 12);
+INSERT INTO CLOTHING VALUES (8, "Socks", 20, 4, 8);
+INSERT INTO CLOTHING VALUES (9, "Onesie", 10, 8, 7);
+INSERT INTO CLOTHING VALUES (10, "Sleep Sack", 10, 30, 6);
+INSERT INTO CLOTHING VALUES (11, "Tights", 10, 18, 7);
+INSERT INTO CLOTHING VALUES (12, "Sweatshirt", 20, 30, 16);
+INSERT INTO CLOTHING VALUES (13, "Sweatpants", 20, 22, 14);
+INSERT INTO CLOTHING VALUES (14, "Leggings", 10, 17, 8);
+INSERT INTO CLOTHING VALUES (15, "Jacket", 20, 45, 18);
+
+--display the database ordered by price
+SELECT * FROM clothing ORDER BY price;
+
+--display number of items sold
+SELECT SUM(sold) from clothing;
+
+--display profit for each clothing item
+SELECT name,
+price*sold as profit
+FROM clothing ;
