@@ -1,0 +1,24 @@
+Altering tables after creation in SQL
+
+/* What does the "Mytonies" app's SQL look like? */
+**Creating the database for TonieBoxes and Tonies for 2 different children( Benjamin and Maya)**
+
+CREATE table mytonies ( id integer, Toniebox TEXT, Tonies Text);
+
+INSERT into mytonies (id, Toniebox, Tonies) VALUES ( 1, "Benjamin", "Cocomelon");
+INSERT into mytonies (id, Toniebox, Tonies) VALUES (2, "Benjamin", "Counting Songs");
+INSERT into mytonies (id, Toniebox, Tonies) VALUES (3, "Benjamin", "Lion King");
+INSERT into mytonies (id, Toniebox, Tonies) VALUES (4, "Maya", " Favorite Children's songs"); 
+INSERT into mytonies (id, Toniebox, Tonies) VALUES (5, "Maya", "Beethoven for Kids"); 
+INSERT into mytonies (id, Toniebox, Tonies) VALUES( 6, "Maya", "Lion King");
+INSERT into mytonies (id, Toniebox, Tonies) VALUES ( 7, "Maya", "Mulan");
+Select * from mytonies;
+
+
+**What happens when Maya gifts Benjamin one of her Tonies?**
+UPDATE mytonies set TonieBox= "Benjamin" where id = 7;
+select * from mytonies;
+
+**What happens if Maya looses a Tonie?**
+DELETE from mytonies where id=6;
+select * from mytonies;
