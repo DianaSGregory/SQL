@@ -2,7 +2,7 @@ For this project I worked with the "chinook" database.
 The database and information about it can be found at the following link: https://www.sqlitetutorial.net/sqlite-sample-database/
 Here is a comprehensive list of my questions and answers based on this particular database:
 
-1.Show Customers (their full names, customer ID, and country) who are not in the US. (Hint: != or <> can be used to say "is not equal to").
+1.Show Customers (their full names, customer ID, and country) who are not in the US.
 SELECT
 CustomerID,
 FirstName,
