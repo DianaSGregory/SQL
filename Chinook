@@ -1,4 +1,4 @@
-For this project I worked with the "chinook" database.
+For this project I worked with the "chinook" database which represents a digital media store and includes tables for artists, albums, media tracks, invoices, and customers.
 The database and information about it can be found at the following link: https://www.sqlitetutorial.net/sqlite-sample-database/
 Here is a comprehensive list of my questions and answers based on this particular database:
 
